@@ -38,10 +38,11 @@
     .company-banner {
       background-image: url('Untitled design_page-0001.jpg');
       background-size: cover;
-      background-position: center;
+      background-position: center top;
+      background-repeat: no-repeat;
       text-align: center;
       color: white;
-      padding: 100px 20px 50px;
+      padding: 15vh 5vw;
     }
     .company-banner h1 {
       font-size: 48px;
@@ -96,11 +97,10 @@
       flex-direction: column;
     }
     .service-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: contain;
-}
-
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+    }
     .service-card .content {
       padding: 15px;
       text-align: center;
@@ -153,6 +153,44 @@
       padding: 15px 0;
       margin-top: 40px;
     }
+
+    /* ✅ Mobile Responsive Fix */
+    @media (max-width: 768px) {
+      .company-banner {
+        padding: 80px 10px 40px;
+        background-size: contain;
+      }
+
+      .company-banner h1 {
+        font-size: 32px;
+      }
+
+      .tagline {
+        font-size: 18px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+      }
+
+      .service-card img {
+        height: auto;
+        max-height: 140px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      form input,
+      form select,
+      form textarea {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -180,7 +218,9 @@
 
   <section>
     <h2>About Us</h2>
-    <p style="color: #1a237e;">At our company, we specialize in delivering reliable and professional electrical services, including installation, wiring, fitting, repair, and earthing. Whether it’s a new project or a maintenance need, we ensure every job is completed with precision and safety. Our team is committed to using only the highest quality products and materials, guaranteeing long-lasting results and customer satisfaction. From residential to commercial spaces, we handle all electrical needs with expertise and care. Trust us to power your home or business with efficient solutions, transparent service, and a strong focus on quality, safety, and professionalism.</p>
+    <p style="color: #1a237e;">
+      At our company, we specialize in delivering reliable and professional electrical services, including installation, wiring, fitting, repair, and earthing. Whether it’s a new project or a maintenance need, we ensure every job is completed with precision and safety. Our team is committed to using only the highest quality products and materials, guaranteeing long-lasting results and customer satisfaction. From residential to commercial spaces, we handle all electrical needs with expertise and care. Trust us to power your home or business with efficient solutions, transparent service, and a strong focus on quality, safety, and professionalism.
+    </p>
 
     <h2 id="services">Our Services in Navi Mumbai & Mumbai</h2>
     <div class="services-grid">
