@@ -40,19 +40,21 @@
       color: #1a237e;
     }
 
- .company-banner {
+.company-banner {
   background-image: url('Untitled design_page-0001.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  text-align: center;
   color: white;
-  height: 100vh; /* Full viewport height */
+  text-align: center;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Push content to top */
   align-items: center;
-  padding: 0 20px;
+  padding-top: 100px; /* Adjust this to push content lower */
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .company-banner h1 {
